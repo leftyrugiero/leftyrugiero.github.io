@@ -15,42 +15,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="resumeContent.css">
     <title>Material Design for Miso</title>
-	<!-- Simple header with scrollable tabs. -->
   </head>
   <body>
 
 
-  
-
-<div class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col"></div>
-  <div class="mdl-cell mdl-cell--4-col">
-  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-  <div class="mdl-tabs__tab-bar">
-      <a href="#Home" class="mdl-tabs__tab is-active">Home</a>
-      <a href="#CV" class="mdl-tabs__tab">CV</a>
-      <a href="#About" class="mdl-tabs__tab">About</a>
+<div class="mdl-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <!--span class="mdl-layout-title">Title</span-->
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Home</a>
+        <a class="mdl-navigation__link" href="">CV</a>
+        <a class="mdl-navigation__link" href="">About</a>
+        <a class="mdl-navigation__link" href="">Porfolio</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <!--span class="mdl-layout-title">Title</span-->
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
   </div>
-  
-  <div class="mdl-tabs__panel is-active" id="Home">
-    <h1>Miso Milicevic</h1>
-	<h2>Work Experience</h2>
-	<h2>Skills</h2>
-	<h2>Education</h2>
-  </div>
-  <div class="mdl-tabs__panel" id="CV">
-    
-  </div>
-  <div class="mdl-tabs__panel" id="About">
-    
-  </div>
+  <main class="mdl-layout__content">
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Get resume
+      </button>
+  </main>
 </div>
-  </div>
-  <div class="mdl-cell mdl-cell--4-col"></div>
-</div>
-  
-  
-  
  
  <script src="resumeContent.js"></script>
   </body>
