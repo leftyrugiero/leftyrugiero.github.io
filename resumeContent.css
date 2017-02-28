@@ -4,11 +4,10 @@ html
 background-color:#222222; 
 color:white;
 }
-
-h1 ,h2, h3, h4, h5, h6{
-  text-align: center;
-}
 a
 {
  color:white;
+}
+a:hover {
+  color: #9135cf;
 }
